@@ -1,0 +1,42 @@
+body {
+    background: #000;
+    font-family:'Oswald', sans-serif;;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #f53404;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 100px #0ea309;
+    
+}
+
+.vehicle-type,
+.distance,
+.calculate
+.result {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 80%;
+}
+
+#result {
+    font-weight: bold;
+}
+
+#emission {
+    color: #e63946;
+}

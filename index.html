@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emission Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="align-items: center;"><h1>Carbon Emission Calculator</h1>
+    <form id="emission-form">
+        <div class="vehicle-type">
+            <label for="vehicle">Select Vehicle Type:</label>
+            <select id="vehicle" name="vehicle">
+                <option value="bike">Bike</option>
+                <option value="car">Car</option>
+                <option value="bus">Bus</option>
+                <option value="truck">Truck</option>
+            </select>
+        </div>
+        <div class="distance">
+            <label for="distance">Distance (km):</label>
+            <input type="range" id="distance" name="distance" min="0" max="1000" value="0">
+            <span id="distance-value">0 km</span>
+        </div>
+        <div class="calculate">
+            <input type="button" value="Calculate" id="calculate-button"  style="border-radius: 50px";>
+        </div>
+        <div class="result" id="result">
+            <p>Carbon Emission: <span id="emission">0</span> kg CO2</p>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
